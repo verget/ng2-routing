@@ -6,18 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.message = 'This is the sample message.';
+var NotFoundComponent = (function () {
+    function NotFoundComponent() {
     }
-    return AppComponent;
+    return NotFoundComponent;
 }());
-AppComponent = __decorate([
+NotFoundComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        styles: ["\n    .active {\n        color: #FFF !important;\n    }\n  "],
-        templateUrl: './app/app.component.html'
+        template: "\n     <div class=\"jumbotron text-center\">\n     <h1>404 Not Found</h1>\n     <p>You may be lost. Follow the breadcrumbs back <a routerLink=\"/\"></a></p>\n</div>\n  "
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], NotFoundComponent);
+exports.NotFoundComponent = NotFoundComponent;
+//# sourceMappingURL=not-found.component.js.map
